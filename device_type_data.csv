@@ -1,0 +1,29 @@
+Customer Type,Device Type,Ordered,Count
+New,All,No,2
+New,All,Yes,5
+New,Computer & Tablet,No,22
+New,Computer & Tablet,Yes,26
+New,Computer Only,No,44098
+New,Computer Only,Yes,1926
+New,Mobile & Computer,No,96
+New,Mobile & Computer,Yes,119
+New,Mobile & Tablet,No,71
+New,Mobile & Tablet,Yes,62
+New,Mobile Only,No,135276
+New,Mobile Only,Yes,3124
+New,Tablet Only,No,26100
+New,Tablet Only,Yes,873
+Returning,All,No,11
+Returning,All,Yes,3
+Returning,Computer & Tablet,No,68
+Returning,Computer & Tablet,Yes,33
+Returning,Computer Only,No,38236
+Returning,Computer Only,Yes,3186
+Returning,Mobile & Computer,No,430
+Returning,Mobile & Computer,Yes,187
+Returning,Mobile & Tablet,No,254
+Returning,Mobile & Tablet,Yes,88
+Returning,Mobile Only,No,162683
+Returning,Mobile Only,Yes,7583
+Returning,Tablet Only,No,28961
+Returning,Tablet Only,Yes,1878
