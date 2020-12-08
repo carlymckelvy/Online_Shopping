@@ -12,13 +12,13 @@
   }
   
   /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
-  .wrapper {
-    position: relative;
-    min-height: 100%;
-    padding-bottom: 130px;
-    overflow: auto;
-    background-color: #ffffff;
-  }
+  /* .wrapper { */
+    /* position: relative; */
+    /* min-height: 100%; */
+    /* padding-bottom: 130px; */
+    /* overflow: auto; */
+    /* background-color: #ffffff; */
+  /* } */
   
   /* The footer is positioned at the bottom of the page */
   .footer {
@@ -39,59 +39,14 @@
     padding: 5px;
     background: #96a7b8;
   }
- /* nav bar formatting */
- nav {
-  width: 100%;
-  display: flex;
-  padding: 5px 15px;
-  justify-content: space-between;
-  max-width: 1366px;
-  height: 100px;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-ul {
+  
+  .navbar {
     list-style-type: none;
-    margin: 1px;
-    padding: 1px;
-    overflow: hidden;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 15px 17px;
-    text-decoration: none;
-}
-
-/* A color changes when hovered over */
-li a:hover {
-    background-color: #96a7b8;
-}
-
-  select {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    color: #ffffff;
-    outline: none;
+    padding: 0px;
+    margin: 0;
+    background: #b5c5d4;
   }
   
-
-  
-  .loader {
-    margin-top: 50px;
-  }
-  
-  .margin-top-50 {
-    margin-top: 50px;
-  }
   
   /* The styles for the parallax */
   .hero {
@@ -109,13 +64,14 @@ li a:hover {
   .hero h1 {
     margin-top: 200px;
     font-size: 0.1rem;
+    color: rgb(188, 197, 218);
     -webkit-text-stroke: 2px #1b3146;
     animation: title 1.2s forwards linear;
   }
   
   .hero p {
     font-size: 2rem;
-    -webkit-text-stroke: 1.5px #1b3146;
+    -webkit-text-stroke: 0.2px #1b3146;
     opacity: 0;
     animation: subtitle 1.2s forwards linear;
     animation-delay: 1.2s;
@@ -224,7 +180,6 @@ li a:hover {
     }
   
     to {
-      font-size: 3.0rem;
       opacity: 1;
     }
   }
