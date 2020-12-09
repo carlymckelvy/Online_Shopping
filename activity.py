@@ -1,8 +1,7 @@
 import os
-import pandas as pd 
+import pandas as pd
 import numpy as np 
 import flask
-import pickle
 from flask import Flask, render_template, request
 from tensorflow.keras.models import load_model
 
@@ -13,12 +12,12 @@ def index():
     return render_template('index.html')
 
 @app.route("/data")
-def activity():
+def data():
     return render_template("data.html")
 
-@app.route("/activity")
+@app.route("/activity2")
 def activity():
-    return render_template("activity.html")
+    return render_template("activity2.html")
 
 def ValuePredictor(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1,23)
@@ -34,7 +33,7 @@ def result():
         to_predict_list = list(map(float, to_predict_list))
     result = ValuePredictor(to_predict_list)
     prediction = str(result)
-    return render_template('predict.html',prediction=prediction)
+    return render_template('predict2.html',prediction=prediction)
 
 if __name__ == '__main__':
     app.run(debug=True)
