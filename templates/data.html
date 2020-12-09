@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,55 +10,55 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Trade-Gothic" rel="stylesheet"> -->
   <link rel="stylesheet" href="../static/css/style.css">
 </head>
-
 <body>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-1">
-				<img alt="glittery shiba" src="..\static\images\glittery_shiba.jpeg" width="80" height="80" alt="glittery shiba" loading="lazy"/>
-			</div>
-			<div class="col-md-11">
-				<ul class="nav">
-					<li class="nav-item">
-						<a class="nav-link" href="/">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/data">Data</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/activity2">App</a>
-					</li>
-		
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="hero text-center">
-					<h1>
-						Are you gonna buy that?
-					</h1>
-				
-				</div>
-			</div>
-		</div>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="../static/images/glittery_shiba.jpeg" width="80" height="80" alt="" loading="lazy">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/data">Data <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/activity2">App</a>
+          </li>
+        </ul>
+      </div>
+	</nav>
+	<div class="hero text-center">
+		<h1>Are you gonna buy that?</h1>
+	</div>
 		<div class="row">
 			<div class="col-md-12">
 				<h3>
 					<i>Data exploration</i>
 				</h3>
 			</div>
+		</div>
+		<br>
+		<br>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-1"></div>
+				<div class="col-md-5">
 				<h2>
 					Jaccard Correlation Heatmap
-				</h2><img alt="Jaccard Correlation Heatmap" src="../static/images/Jaccard Correlation Heatmap.png"  class="img-responsive">/>
+				</h2><img alt="Jaccard Correlation Heatmap" src="../static/images/Jaccard Correlation Heatmap.png"  height="600" width="600" class="img-responsive">/>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-1"></div>
+				<div class="col-md-5">
 				<h2>
 					Pearsons R Correlation Heatmap
-				</h2><img alt="Pearsons R Correlation Heatmap" src="../static/images/Pearsons R Correlation Heatmap.png"  class="img-responsive">/>
+				</h2><img alt="Pearsons R Correlation Heatmap" src="../static/images/Pearsons R Correlation Heatmap.png"  height="600" width="600" class="img-responsive">/>
 			</div>
 		</div>
 		<br>

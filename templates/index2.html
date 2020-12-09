@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,36 +10,32 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Trade-Gothic" rel="stylesheet"> -->
   <link rel="stylesheet" href="../static/css/style.css">
 </head>
-
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-1">
-			<img alt="glittery shiba" src="..\static\images\glittery_shiba.jpeg" width="80" height="80" alt="glittery shiba" loading="lazy"/>
-		</div>
-		<div class="col-md-11">
-			<ul class="nav">
-				<li class="nav-item">
-					<a class="nav-link" href="/">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/data">Data</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/activity2">App</a>
-				</li>
-				
-			</ul>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<div class="hero text-center">
-				<h1>
-					Are you gonna buy that?
-				</h1>
-				
-			</div>
-		</div>
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="../static/images/glittery_shiba.jpeg" width="80" height="80" alt="" loading="lazy">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/data">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/activity2">App</a>
+          </li>
+        </ul>
+      </div>
+	</nav>
+	<div class="hero text-center">
+		<h1>Are you gonna buy that?</h1>
 	</div>
 	<div class="row">
 		<div class="col-md-12">
@@ -52,12 +47,14 @@
 		</div>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
 					<h3>
 						Boosting confusion result
 					</h3><img alt="Boosting Confusion Result" src="../static/images/Boosting confusion result.png" class="img-responsive"/>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
 					<h2>
 						Boosting confusion
 					</h2><img alt="Boosting Confusion" src="../static/images/Boosting confusion.png" class="img-responsive"/>
@@ -66,12 +63,14 @@
 			<br>
 			<br>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
 					<h2>
 						Boosting ROC AUC
 					</h2><img alt="Boosting ROC AUC" src="../static/images/Boosting roc auc.png" class="img-responsive"/>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
 					<h2>
 						Boosting Top 5 Variables
 					</h2><img alt="Boosting Top 5 Variables" src="../static/images/Boosting top 5 variables.png"class="img-responsive" />
@@ -80,12 +79,14 @@
 			<br>
 			<br>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
 					<h2>
 						RF Confusion Result
 					</h2><img alt="RF Confusion Result" src="../static/images/RF confusion result.png" class="img-responsive"/>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
 					<h2>
 						RF Confusion Result
 					</h2><img alt="RF Confusion Result" src="../static/images/RF confusion.png" class="img-responsive"/>
@@ -94,23 +95,25 @@
 			<br>
 			<br>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
 					<h2>
 						RF ROC AUC
 					</h2><img alt="RF ROC AUC" src="../static/images/RF roc auc.png" />
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
 					<h2>
 						RF Top 5 Variables
 					</h2><img alt="RF Top 5 Variables" src="../static/images/RF top 5 variables.png" />
 				</div>
 			</div>
-		</div>
+		</div>	
 	</div>
 </div>
 
 <div class="footer">
-	<span class="bottom text-center">aijie ★ carly ★ christina ★ debby</span>
+	<p>aijie ★ carly ★ christina ★ debby</p>
 </div>
 
 
