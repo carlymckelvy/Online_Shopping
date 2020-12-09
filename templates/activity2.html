@@ -1,0 +1,141 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Trade-Gothic" rel="stylesheet"> -->
+        <link rel="stylesheet" href="../static/css/style.css">
+      </head>
+      
+      <body>
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-1">
+                      <img alt="glittery shiba" src="..\static\images\glittery_shiba.jpeg" width="80" height="80" alt="glittery shiba" loading="lazy"/>
+                  </div>
+                  <div class="col-md-11">
+                      <ul class="nav">
+                          <li class="nav-item">
+                              <a class="nav-link" href="/">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="/data">Data</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="/activity2">App</a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hero text-center">
+                            <h1>
+                                Are you gonna buy that?
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+    <h2>User Activity</h2>
+    <h3>Use the arrows to make a selection. 1 = yes and 0 = no </h3>
+<div>
+  <form action="/predict" method="POST">
+    <label for="basket_icon_click">Basket Icon Click</label>
+    <input type="number" step="1" min="0" max="1" id="basket_icon_click" name="basket_icon_click">
+    <br>
+    <label for="basket_add_list">Add to Basket</label>
+    <input type="number" step="1" min="0" max="1" id="basket_add_list" name="basket_add_list">
+    <br>
+    <label for="basket_add_detail">Basket Add Detail</label>
+    <input type="number" step="1" min="0" max="1" id="basket_add_detail" name="basket_add_detail">
+    <br>
+    <label for="sort_by">Sort By</label>
+    <input type="number" step="1" min="0" max="1" id="sort_by" name="sort_by">
+    <br>
+    <label for="image_picker">Image Picker</label>
+    <input type="number" step="1" min="0" max="1" id="image_picker" name="image_picker">
+    <br>
+    <label for="account_page_click">Account Page Click</label>
+    <input type="number" step="1" min="0" max="1" id="account_page_click" name="account_page_click">
+    <br>
+    <label for="promo_banner_click">Promo Banner Click</label>
+    <input type="number" step="1" min="0" max="1" id="promo_banner_click" name="promo_banner_click">
+    <br>
+    <label for="detail_wishlist_add">Add to Wishlist</label>
+    <input type="number" step="1" min="0" max="1" id="detail_wishlist_add" name="detail_wishlist_add">
+    <br>
+    <label for="list_size_dropdown">List Size Dropdown</label>
+    <input type="number" step="1" min="0" max="1" id="list_size_dropdown" name="list_size_dropdown">
+    <br>
+    <label for="closed_minibasket_click">Closed Minibasket Click</label>
+    <input type="number" step="1" min="0" max="1" id="closed_minibasket_click" name="closed_minibasket_click">
+    <br>
+    <label for="checked_delivery_detail">Checked Delivery Detail</label>
+    <input type="number" step="1" min="0" max="1" id="checked_delivery_detail" name="checked_delivery_detail">
+    <br>
+    <label for="checked_returns_detail">Checked Returns Detail</label>
+    <input type="number" step="1" min="0" max="1" id="checked_returns_detail" name="checked_returns_detail">
+    <br>
+    <label for="sign_in">Sign In</label>
+    <input type="number" step="1" min="0" max="1" id="sign_in" name="sign_in">
+    <br>
+    <label for="saw_checkout">Saw Checkout</label>
+    <input type="number" step="1" min="0" max="1" id="saw_checkout" name="saw_checkout">
+    <br>
+    <label for="saw_sizecharts">Saw Size Charts</label>
+    <input type="number" step="1" min="0" max="1" id="saw_sizecharts" name="saw_sizecharts">
+    <br>
+    <label for="saw_delivery">Saw Delivery</label>
+    <input type="number" step="1" min="0" max="1" id="saw_delivery" name="saw_delivery">
+    <br>
+    <label for="saw_account_upgrade">Saw Account Upgrade</label>
+    <input type="number" step="1" min="0" max="1" id="saw_account_upgrade" name="saw_account_upgrade">
+    <br>
+    <label for="saw_homepage">Saw Homepage</label>
+    <input type="number" step="1" min="0" max="1" id="saw_homepage" name="saw_homepage">
+    <br>
+    <label for="device_mobile">Device: Mobile</label>
+    <input type="number" step="1" min="0" max="1" id="device_mobile" name="device_mobile">
+    <br>
+    <label for="device_computer">Device: Computer</label>
+    <input type="number" step="1" min="0" max="1" id="device_computer" name="device_computer">
+    <br>
+    <label for="device_tablet">Device: Tablet</label>
+    <input type="number" step="1" min="0" max="1" id="device_tablet" name="device_tablet">
+    <br>
+    <label for="returning_user">Returning User</label>
+    <input type="number" step="1" min="0" max="1" id="returning_user" name="returning_user">
+    <br>
+    <label for="loc_uk">User Location: UK</label>
+    <input type="number" step="1" min="0" max="1" id="loc_uk" name="loc_uk">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<div class="footer">
+    <span class="bottom text-center">aijie ★ carly ★ christina ★ debby</span>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+<script
+    type='text/javascript'>                    var divElement = document.getElementById('viz1607396959919'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '75%'; vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+<script src="../static/js/charts.js"></script>
+</body>
